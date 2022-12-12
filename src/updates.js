@@ -27,7 +27,7 @@ function gameTick() {
 	player.statistics.totalNumber+=numberPerSecond*delta
 	
 	if (player.milestones>4) {
-		primeGain=Math.floor(Math.pow(player.number/1e11,0.2))
+		primeGain=Math.floor(Math.pow(player.number/1e6,0.6))
 		if (isNaN(player.prime.primes)||typeof(player.prime.primes)!='number') player.prime.primes=0
 	}
 	if (player.prime.features>2) {
